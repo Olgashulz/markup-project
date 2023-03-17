@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar fixed-top">
+        <div class="header__container">
+        <span class="logo">
+            Stock<span class="logo__part--them-light">Stat</span></span
+        >
+            <ul class="navigation__list">
+                <li class="navigation__item">Statistics</li>
+                <li class="navigation__item">Analysis</li>
+                <li class="navigation__item">Stock API</li>
+                <li class="navigation__item">Contacts</li>
+            </ul>
+            <ul class="header__contact">
+                <li>oll@investing.com</li>
+                <li>+972 53 111111</li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="hero">
+    <div class="hero__container">
+        <h3 class="subtitle">Make Informed Investment Decisions with Data Analysis</h3>
+        <h1 class="title">Build Your Ideal Investment Portfolio</h1>
+        <button class="button">get Started</button>
+    </div>
+</section>
+<section class="services">
+    <ul class="services__list">
+        <li class="service__item service__item--black">
+            <div class="service__num">01</div>
+            <div class="service__content">
+                <h4 class="services__subtitle">Exploring Securities Trends</h4>
+                <h3 class="services__title">Statistics</h3>
+            </div>
+        </li>
+        <li class="service__item service__item--red">
+            <div class="service__num ">02</div>
+            <div class="service__content">
+                <h4 class="services__subtitle">Smart Investment Insights</h4>
+                <h3 class="services__title">Analysis</h3>
+            </div>
+        </li>
+        <li class="service__item service__item--grey">
+            <div class="service__num">03</div>
+            <div class="service__content">
+                <h4 class="services__subtitle">Real-Time Data & Analysis</h4>
+                <h3 class="services__title">Stock API</h3>
+            </div>
+        </li>
+    </ul>
+</section>
+<section class="api">
+    <div class="api_image"><img src="./images/digital-marketing-1725340.jpg" alt="town"></div>
+    <div class="api__content">
+        <h5 class="api__subtitle">Latest Stock Market Information</h5>
+        <h3 class="api__title">Real-Time Stock Price Data API</h3>
+        <div class="api__relative">
+            <p class="api__text">By choosing our API, you can save valuable time and effort on data collection and
+                analysis, and focus on making smart investment decisions based on actual data. Our API is reliable,
+                accurate, and easy to use, making it an essential tool for investors, traders, and analysts who want to
+                stay ahead of the game.</p>
+            <p class="api__text">Invest in our stock analysis API today and take advantage of the power of real-time
+                data and in-depth analysis to achieve your investment goals.</p>
+            <p class="api__text">For more information on our stock market analysis API, please don't hesitate to contact
+                us. </p>
+        </div>
+        <p class="api__text tel">+972 53 111111</p>
+    </div>
+</section>
+<section class="statistic">
+    <div class="statistic__container">
+        <h5 class="statistic__subtitle">Data-Driven Strategies for Investment Success</h5>
+        <h3 class="statistic__title">Market Insights</h3>
+        <div class="statistics">
+            <div class="form__container">
+                <form class="form" id="form">
+                    <label for="dateFrom">From</label>
+                    <input type="date" id="dateFrom" placeholder="01.01.10" class="text">
+
+                    <label for="dateTo">To</label>
+                    <input type="date" id="dateTo" placeholder="01.01.23" class="text">
+
+                    <label for="stock1">First stock</label>
+                    <input type="text" id="stock1" placeholder="APPL" class="text">
+
+                    <label for="stock2">Second stock</label>
+                    <input type="text" id="stock2" placeholder="S&P500" class="text">
+
+                    <label for="period">Period</label>
+                    <input type="number" id="period" placeholder="5" class="text">
+                    <button type="submit" class="btn btn-danger" id="statsBtn">See statistics</button>
+                </form>
+            </div>
+                <div class="statistic__box">
+            <div class="statistic__chart">
+            </div>
+            <div class="statistic__table">
+            </div>
+
+    </div>
+</section>
+
+
+</body>
+</html>
