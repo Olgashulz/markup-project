@@ -220,7 +220,7 @@ button:hover {
 }
 
 .service__num, .service__content {
-    transition: 0.2s ease-in-out;
+    transition: 0.5s ease-in-out;
 }
 
 /*api*/
