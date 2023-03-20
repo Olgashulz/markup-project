@@ -83,32 +83,123 @@
         <div class="statistics">
             <div class="form__container">
                 <form class="form" id="form">
-                    <label for="dateFrom">From</label>
-                    <input type="date" id="dateFrom" placeholder="01.01.10" class="text">
-
-                    <label for="dateTo">To</label>
-                    <input type="date" id="dateTo" placeholder="01.01.23" class="text">
-
-                    <label for="stock1">First stock</label>
-                    <input type="text" id="stock1" placeholder="APPL" class="text">
-
-                    <label for="stock2">Second stock</label>
-                    <input type="text" id="stock2" placeholder="S&P500" class="text">
-
-                    <label for="period">Period</label>
-                    <input type="number" id="period" placeholder="5" class="text">
-                    <button type="submit" class="btn btn-danger" id="statsBtn">See statistics</button>
+                    <div class="input__container">
+                        <label for="dateFrom">From</label>
+                        <input type="date" id="dateFrom" placeholder="01.01.10" class="text">
+                    </div>
+                    <div class="input__container">
+                        <label for="dateTo">To</label>
+                        <input type="date" id="dateTo" placeholder="01.01.23" class="text">
+                    </div>
+                    <div class="input__container">
+                        <label for="stock">Stock</label>
+                        <input type="text" id="stock" placeholder="APPL" class="text">
+                    </div>
+                    <div class="input__container">
+                        <label for="amount">Amount $</label>
+                        <input type="text" id="amount" placeholder="200" class="text">
+                    </div>
+                    <div class="input__container">
+                        <label for="period">Period</label>
+                        <input type="number" id="period" placeholder="5" class="text">
+                    </div>
+                    <button type="submit" class="button form__button" id="statsBtn">Calculate</button>
                 </form>
             </div>
-                <div class="statistic__box">
-            <div class="statistic__chart">
-            </div>
-            <div class="statistic__table">
-            </div>
+            <div class="statistic__box">
+                <div class="statistic__chart">
+                </div>
+                <div class="statistic__table">
+                    <h5>Today's Price Fluctuations</h5>
+                    <table class="table table-hover table-dark">
+                        <thead>
+                        <tr>
+                            <th class="stock" scope="col">Stocks</th>
+                            <th class="stock" scope="col">Last</th>
+                            <th class="stock" scope="col">Chg</th>
+                            <th class="stock" scope="col">Chg%</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th class="stock" scope="row">Gold</th>
+                            <td>1985.80</td>
+                            <td class="green">+12.30</td>
+                            <td class="green">+0.62%</td>
+                        </tr>
+                        <tr>
+                            <th class="stock" scope="row">S&P500</th>
+                            <td>3916.04</td>
+                            <td class="red">-43.64</td>
+                            <td class="red">-1.10%</td>
+                        </tr>
+                        <tr>
+                            <th class="stock" scope="row">APPL</th>
+                            <td>155.00</td>
+                            <td class="red">-0.85</td>
+                            <td class="red">-0.55%</td>
+                        </tr>
+                        <tr>
+                            <th class="stock" scope="row">TSLA</th>
+                            <td>180.13</td>
+                            <td class="red">-4.00</td>
+                            <td class="red">-2.17%</td>
+                        </tr>
+                        <tr>
+                            <th class="stock" scope="row">VIX</th>
+                            <td>26.74</td>
+                            <td class="green">+3.75</td>
+                            <td class="green">+16.31%</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+</section>
+<section class="correlation">
+    <div class="correlation__container">
+    <h5 class="correlation__subtitle">Analyze the Relationship Between Two Stocks</h5>
+    <h3 class="correlation__title">Assessing the Dependence of Two Stocks</h3>
+    <p class="correlation__text">Discover the correlation coefficient between any two stocks with our easy-to-use
+        calculator. Make informed investment decisions based on the data-driven analysis of stock market trends</p>
+    <div class="correlation__box">
+            <form class="correlation__form" id="correlation__form">
+                <h4>Select stocks and analysis period</h4>
+                <div class="date__container">
+                <div class="input__container">
+                    <label for="dateFrom1">From</label>
+                    <input type="date" id="dateFrom1" placeholder="01.01.10" class="text">
+                </div>
+                <div class="input__container ">
+                    <label for="dateTo1">To</label>
+                    <input type="date" id="dateTo1" placeholder="01.01.23" class="text">
+                </div>
+                </div>
+                <div class="input__container symbol">
+                    <label for="stock1">First Symbol</label>
+                    <input type="text" id="stock1" placeholder="APPL" class="text">
+                </div>
+                <div class="input__container symbol">
+                    <label for="stock2">Second Symbol</label>
+                    <input type="text" id="stock2" placeholder="200" class="text">
+                </div>
+                <button type="submit" class="button form__button">Calculate</button>
+            </form>
+        <div class="correlation__chart"></div>
+    </div>
+
 
     </div>
 </section>
-
-
+<footer>
+    <div class="footer__container">
+        <ul class="header__contact">
+            <li>oll@investing.com</li>
+            <li>+972 53 111111</li>
+        </ul>
+        <span class="logo footer__logo">
+            Stock<span class="logo__part--them-light">Stat</span></span
+        >
+    </div>
+</footer>
 </body>
 </html>
