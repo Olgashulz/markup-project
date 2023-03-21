@@ -1,0 +1,26 @@
+.page-statistic{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 100px 0;
+}
+.page-statistic__main{
+    height: 700px;
+    width: 800px;
+    background-color: #3e4953;
+    background-image: url("../images/1-1129x800.png");
+
+}
+
+.page-statistic__sideBar{
+    height: 700px;
+    width: 358px;
+    /*background-color: #c50000;*/
+}
+
+.page-statistic__table h5{
+    color: #000000;
+    margin-bottom: 10px;
+}
