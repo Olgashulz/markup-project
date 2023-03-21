@@ -14,10 +14,13 @@
             Stock<span class="logo__part--them-light">Stat</span></span
         >
             <ul class="navigation__list">
-                <li class="navigation__item">Statistics</li>
+                <li class="navigation__item">
+                    <a class="navigation__link link" href="./index.html">Home</a></li>
+                <li class="navigation__item">
+                    <a class="navigation__link link" href="./statistics.html">Statistics</a></li>
                 <li class="navigation__item">Analysis</li>
-                <li class="navigation__item">Stock API</li>
-                <li class="navigation__item">Contacts</li>
+                <li class="navigation__item">
+                    <a class="navigation__link link" href="./contacts.html">Contacts</a></li>
             </ul>
             <ul class="header__contact">
                 <li>oll@investing.com</li>
@@ -58,24 +61,40 @@
         </li>
     </ul>
 </section>
-<section class="api">
-    <div class="api_image"><img src="./images/digital-marketing-1725340.jpg" alt="town"></div>
-    <div class="api__content">
-        <h5 class="api__subtitle">Latest Stock Market Information</h5>
-        <h3 class="api__title">Real-Time Stock Price Data API</h3>
-        <div class="api__relative">
-            <p class="api__text">By choosing our API, you can save valuable time and effort on data collection and
-                analysis, and focus on making smart investment decisions based on actual data. Our API is reliable,
-                accurate, and easy to use, making it an essential tool for investors, traders, and analysts who want to
-                stay ahead of the game.</p>
-            <p class="api__text">Invest in our stock analysis API today and take advantage of the power of real-time
-                data and in-depth analysis to achieve your investment goals.</p>
-            <p class="api__text">For more information on our stock market analysis API, please don't hesitate to contact
-                us. </p>
+<section class="correlation">
+    <div class="correlation__container">
+        <h5 class="correlation__subtitle">Analyze the Relationship Between Two Stocks</h5>
+        <h3 class="correlation__title">Assessing the Dependence of Two Stocks</h3>
+        <p class="correlation__text">Discover the correlation coefficient between any two stocks with our easy-to-use
+            calculator. Make informed investment decisions based on the data-driven analysis of stock market trends</p>
+        <div class="correlation__box">
+            <form class="correlation__form" id="correlation__form">
+                <h4>Select stocks and analysis period</h4>
+                <div class="date__container">
+                    <div class="input__container">
+                        <label for="dateFrom1">From</label>
+                        <input type="date" id="dateFrom1" placeholder="01.01.10" class="text">
+                    </div>
+                    <div class="input__container ">
+                        <label for="dateTo1">To</label>
+                        <input type="date" id="dateTo1" placeholder="01.01.23" class="text">
+                    </div>
+                </div>
+                <div class="input__container symbol">
+                    <label for="stock1">First Symbol</label>
+                    <input type="text" id="stock1" placeholder="APPL" class="text">
+                </div>
+                <div class="input__container symbol">
+                    <label for="stock2">Second Symbol</label>
+                    <input type="text" id="stock2" placeholder="S&P500" class="text">
+                </div>
+                <button type="submit" class="button form__button">Calculate</button>
+            </form>
+            <div class="correlation__chart"></div>
         </div>
-        <p class="api__text tel">+972 53 111111</p>
     </div>
 </section>
+
 <section class="statistic">
     <div class="statistic__container">
         <h5 class="statistic__subtitle">Data-Driven Strategies for Investment Success</h5>
@@ -154,39 +173,27 @@
                         </tbody>
                     </table>
                 </div>
-</section>
-<section class="correlation">
-    <div class="correlation__container">
-    <h5 class="correlation__subtitle">Analyze the Relationship Between Two Stocks</h5>
-    <h3 class="correlation__title">Assessing the Dependence of Two Stocks</h3>
-    <p class="correlation__text">Discover the correlation coefficient between any two stocks with our easy-to-use
-        calculator. Make informed investment decisions based on the data-driven analysis of stock market trends</p>
-    <div class="correlation__box">
-            <form class="correlation__form" id="correlation__form">
-                <h4>Select stocks and analysis period</h4>
-                <div class="date__container">
-                <div class="input__container">
-                    <label for="dateFrom1">From</label>
-                    <input type="date" id="dateFrom1" placeholder="01.01.10" class="text">
-                </div>
-                <div class="input__container ">
-                    <label for="dateTo1">To</label>
-                    <input type="date" id="dateTo1" placeholder="01.01.23" class="text">
-                </div>
-                </div>
-                <div class="input__container symbol">
-                    <label for="stock1">First Symbol</label>
-                    <input type="text" id="stock1" placeholder="APPL" class="text">
-                </div>
-                <div class="input__container symbol">
-                    <label for="stock2">Second Symbol</label>
-                    <input type="text" id="stock2" placeholder="200" class="text">
-                </div>
-                <button type="submit" class="button form__button">Calculate</button>
-            </form>
-        <div class="correlation__chart"></div>
+            </div>
+        </div>
     </div>
-
+</section>
+<section class="api">
+    <div class="api_image"><img src="./images/digital-marketing-1725340.jpg" alt="town"></div>
+    <div class="api__content">
+        <h5 class="api__subtitle">Latest Stock Market Information</h5>
+        <h3 class="api__title">Real-Time Stock Price Data API</h3>
+        <div class="api__relative">
+            <p class="api__text">By choosing our API, you can save valuable time and effort on data collection and
+                analysis, and focus on making smart investment decisions based on actual data. Our API is reliable,
+                accurate, and easy to use, making it an essential tool for investors, traders, and analysts who want to
+                stay ahead of the game.</p>
+            <p class="api__text">Invest in our stock analysis API today and take advantage of the power of real-time
+                data and in-depth analysis to achieve your investment goals.</p>
+            <p class="api__text">For more information on our stock market analysis API, please don't hesitate to contact
+                us. </p>
+        </div>
+        <p class="api__text tel">+972 53 111111</p>
+        <p class="api__text tel">Link </p>
 
     </div>
 </section>
