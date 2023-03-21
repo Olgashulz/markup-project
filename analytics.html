@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analytics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/statistics.css">
+    <link rel="stylesheet" href="css/anatytics.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar fixed-top">
+        <div class="header__container">
+        <span class="logo">
+            Stock<span class="logo__part--them-light">Stat</span></span
+        >
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link link" href="./index.html">Home</a></li>
+                <li class="navigation__item">
+                    <a class="navigation__link link" href="./statistics.html">Statistics</a></li>
+                <li class="navigation__item">
+                    <a class="navigation__link link" href="./analytics.html">Analytics</a></li>
+                <li class="navigation__item">
+                    <a class="navigation__link link" href="./contacts.html">Contacts</a></li>
+            </ul>
+            <ul class="header__contact">
+                <li>oll@investing.com</li>
+                <li>+972 53 111111</li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<section class="page__header">
+    <div class="page__container">
+        <h1 class="page__title">Analytics</h1></div>
+</section>
+<div class="container">
+    <section class="page__coreliation">
+        <section class="correlation">
+            <div class="correlation__container">
+                <div class="correlation__box">
+                    <div class="correlation__box--left">
+                        <div class="form__container correlation__form-container">
+                            <form class="form correlationPage__form" id="form">
+                                <div class="input__container">
+                                    <label for="dateFrom">From</label>
+                                    <input type="date" id="dateFrom" placeholder="01.01.10" class="text">
+                                </div>
+                                <div class="input__container">
+                                    <label for="dateTo">To</label>
+                                    <input type="date" id="dateTo" placeholder="01.01.23" class="text">
+                                </div>
+                                <div class="input__container">
+                                    <label for="stock">Stock</label>
+                                    <input type="text" id="stock" placeholder="APPL" class="text">
+                                </div>
+                                <div class="input__container">
+                                    <label for="amount">Amount $</label>
+                                    <input type="text" id="amount" placeholder="200" class="text">
+                                </div>
+                                <div class="input__container">
+                                    <label for="period">Period</label>
+                                    <input type="number" id="period" placeholder="5" class="text">
+                                </div>
+                                <button type="submit" class="button form__button correlation__button " id="statsBtn">
+                                    Calculate
+                                </button>
+                            </form>
+                        </div>
+                        <div class="correlation__chart">
+
+
+                        </div>
+                    </div>
+                    <div class="correlation__info">
+                        <div class="stock__info">
+                            <h3 class="stock__symbol">APPL</h3>
+                            <h4 class="stock__name">NasdaqGS - NasdaqGS Real Time Price. Currency in USD</h4>
+                            <div class="price__now">
+                                <span class="prise">157.66</span>
+                                <span class="chg">+0.26</span>
+                                <span class="chg">(+0.2%)</span>
+                            </div>
+                            <p class="min_prise">Min.price: 132.2</p>
+                            <p class="min_prise">Max.price: 161.30</p>
+                        </div>
+
+                        <div class="stock__info">
+                            <h3 class="stock__symbol">Gold</h3>
+                            <h4 class="stock__name">COMEX - COMEX Delayed Price. Currency in USD
+                            </h4>
+                            <div class="price__now">
+                                <span class="prise">1,943.90</span>
+                                <span class="chg red">-38.90</span>
+                                <span class="chg red">(-1.96%)</span>
+                                <p class="min_prise">Min.price: 1,726.25</p>
+                                <p class="min_prise">Max.price: 2002.10</p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section class="analysis">
+            <h2>Тут блок аналитики я думаю сначала нужно посмотреть на графики и там уже создать интересные виджеты...
+            </h2>
+        </section>
+    </section>
+</div>
+</body>
+</html>
