@@ -21,8 +21,7 @@
         <li class="navigation__item">
           <a class="navigation__link link" href="./statistics.html">Statistics</a></li>
         <li class="navigation__item">Analysis</li>
-        <li class="navigation__item">Stock API</li>
-        <li class="navigation__item">
+                <li class="navigation__item">
           <a class="navigation__link link" href="./contacts.html">Contacts</a></li>
       </ul>
       <ul class="header__contact">
@@ -36,11 +35,35 @@
   <div class="page__container">
     <h1 class="page__title">Statistics</h1></div>
 </section>
+
 <section class="page-statistic">
   <section class="page-statistic__main">
 
   </section>
   <section class="page-statistic__sideBar">
+
+    <div class="stock__info">
+<!--      <h3 class="stock__symbol">APPL</h3>-->
+      <select class="form-select" aria-label=APPL>
+        <option selected>APPL</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <h4 class="stock__name">NasdaqGS - NasdaqGS Real Time Price. Currency in USD</h4>
+      <div class="period">
+      <p class="from">from: <span>01.01.2010</span></p>
+      <p class="to">to: <span>01.01.2020</span></p>
+      </div>
+      <div class="price__now">
+      <span class="prise">157.66</span>
+        <span class="chg">+0.26</span>
+        <span class="chg">(+0.2%)</span>
+      </div>
+      <p class="min_prise">Min.price: 132.2</p>
+      <p class="min_prise">Max.price: 161.30</p>
+
+    </div>
     <div class="page-statistic__table">
       <h5>Today's Price Fluctuations</h5>
       <table class="table table-hover table-light">
@@ -83,11 +106,20 @@
           <td class="green">+3.75</td>
           <td class="green">+16.31%</td>
         </tr>
+        <tr>
+          <th class="stock" scope="row">Gold</th>
+          <td>1985.80</td>
+          <td class="green">+12.30</td>
+          <td class="green">+0.62%</td>
+        </tr>
+        <tr>
+          <th class="stock" scope="row">S&P500</th>
+          <td>3916.04</td>
+          <td class="red">-43.64</td>
+          <td class="red">-1.10%</td>
+        </tr>
         </tbody>
       </table>
-    </div>
-    <div class="stock__info">
-
     </div>
   </section>
 </section>

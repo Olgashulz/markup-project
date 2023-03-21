@@ -159,10 +159,6 @@ button:hover {
 }
 
 /*service*/
-.services {
-    margin-bottom: 100px;
-}
-
 .services__list {
     display: flex;
     justify-content: space-evenly;
@@ -233,7 +229,7 @@ button:hover {
 
 .api {
     max-width: 1200px;
-    margin: 0 auto 100px;
+    margin: 100px auto;
     color: black;
     display: flex;
     align-items: center;
